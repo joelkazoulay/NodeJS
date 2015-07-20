@@ -1,0 +1,15 @@
+{
+  "author": "Joel Azoulay",
+  "name": "content-negotiation",
+  "version": "0.0.0",
+  "description": "content-negotiation",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.13.1"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "license": "ISC"
+}
