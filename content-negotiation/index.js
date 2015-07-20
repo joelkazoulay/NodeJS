@@ -42,15 +42,15 @@ app.get('/', function(req, res) {
 // this to add a layer of abstraction 
 // and make things a bit more declaritive
 
-// function format(path) {
-// 	var obj = require(path);
+function format(path) {
+	var obj = require(path);
 
-// 	return function(req, res) {
-// 		res.format(obj);
-// 	};
-// }
+	return function(req, res) {
+		res.format(obj);
+	};
+}
 
-// app.get('/users', format('./users'));
+app.get('/users', format('./users'));
 
 if(!module.parent) {
 	app.listen(3000);
